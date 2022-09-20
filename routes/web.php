@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+// ROTTA HOME
+Route::get('/', 'HomeController@index')->name('home');
+
+//ROTTA Train
+// Route::get('/movies', 'MController@index')->name('train');
