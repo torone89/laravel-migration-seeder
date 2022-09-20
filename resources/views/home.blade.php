@@ -19,35 +19,4 @@
 
             </ul>
         @endforeach
-    </div>
-    <ul>
-        <li>
-            <h1>
-
-            </h1>
-        </li>
-        <li>
-
-        </li>
-        <li>
-            Stazione di arrivo: {{ $traininfo['stazione_di_arrivo'] }}
-        </li>
-        <li>
-            Orario di partenza: {{ $traininfo['orario_di_partenza'] }}
-        </li>
-        <li>
-            Orario di Arrivo: {{ $traininfo['orario_di_arrivo'] }}
-        </li>
-        <li>
-            Codice treno: {{ $traininfo['codice_treno'] }}
-        </li>
-        <li>
-            Numero carrozze: {{ $traininfo['numero_carrozze'] }}
-        </li>
-        <li>
-            In orario: {{ $traininfo['in_orario'] }} //
-            leggenda: 1 = in orario, 0 = non in orario
-        </li>
-
-    </ul>
-@endsection
+    @endsection
