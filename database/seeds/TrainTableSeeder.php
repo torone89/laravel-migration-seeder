@@ -3,7 +3,7 @@
 use App\Models\Train;
 use Illuminate\Database\Seeder;
 
-class TrainsTableSeeder extends Seeder
+class TrainTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,14 +17,14 @@ class TrainsTableSeeder extends Seeder
             $new_train = new Train();
 
             $new_train->azienda = $train['azienda'];
-            $new_train->stazione_di_partenza = $train['stazion_di_partenza'];
+            $new_train->stazion_di_partenza = $train['stazion_di_partenza'];
             $new_train->stazione_di_arrivo = $train['stazione_di_arrivo'];
             $new_train->orario_di_partenza = $train['orario_di_partenza'];
             $new_train->orario_di_arrivo = $train['orario_di_arrivo'];
             $new_train->codice_treno = $train['codice_treno'];
-            $new_train->numero_carrozze = $train['numero_di_carrozze'];
+            $new_train->numero_di_carozze = $train['numero_di_carozze'];
             $new_train->in_orario = $train['in_orario'];
-            $new_train->cancellato = $train['is_cancellato'];
+            $new_train->is_cancellato = $train['is_cancellato'];
 
             $new_train->save();
         }
